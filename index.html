@@ -23,13 +23,13 @@
         function lottery() {
 
             var mes1 = "100|你的中奖提示语,其中指针停靠的位置需你写程序控制"; //从后台通过ajax获取的数据
-			var mes = "100|恭喜老公中奖啦，哈哈"; //从后台通过ajax获取的数据
+			var mes = "100|恭喜老公获得一等奖，哈哈"; //从后台通过ajax获取的数据
             var a = parseInt(mes.split("|")[0]); //角度 
             var p = mes.split("|")[1]; //奖项 
             $("#startbtn").rotate({
                 duration: 5000, //转动时间 
                 angle: 0,
-                animateTo: 1100 + a, //转动角度 
+                animateTo: 1150 + a, //转动角度 
                 easing: $.easing.easeOutSine,
                 callback: function () {
                     alert(p);
